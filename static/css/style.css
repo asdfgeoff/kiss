@@ -2567,7 +2567,7 @@ a.box:active {
 }
 
 .subtitle+.title {
-  margin-top: -20px;
+  margin-top: 0px;
 }
 
 .subtitle.is-1 {
@@ -6672,13 +6672,13 @@ html {
 }
 
 .content h1:not(:first-child),
-.content h2:not(:first-child),
-.content h3:not(:first-child),
-.content h4:not(:first-child),
-.content h5:not(:first-child),
-.content h6:not(:first-child),
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
 article+article {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .content {
