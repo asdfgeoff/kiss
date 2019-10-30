@@ -64,6 +64,13 @@ summary {
   display: block;
 }
 
+figure p {
+  margin: 1.8em;
+  text-align: center !important;
+  color: darkgrey;
+  font-size: 80%;
+}
+
 .button,
 .delete,
 .input,
