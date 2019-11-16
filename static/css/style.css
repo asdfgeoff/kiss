@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap&subset=greek');
+
 .card,
 .highlight,
 .highlight pre,
@@ -326,8 +328,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro",
-    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 code,
@@ -2567,7 +2568,7 @@ a.box:active {
 }
 
 .subtitle+.title {
-  margin-top: -20px;
+  margin-top: 0px;
 }
 
 .subtitle.is-1 {
@@ -6678,7 +6679,7 @@ html {
 .content h5:not(:first-child),
 .content h6:not(:first-child),
 article+article {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .content {
