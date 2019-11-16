@@ -66,6 +66,13 @@ summary {
   display: block;
 }
 
+figure p {
+  margin: 1.8em;
+  text-align: center !important;
+  color: darkgrey;
+  font-size: 80%;
+}
+
 .button,
 .delete,
 .input,
@@ -2802,7 +2809,7 @@ a.box:active {
 }
 
 .highlight {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   overflow: hidden;
   padding: 0;
@@ -6673,11 +6680,11 @@ html {
 }
 
 .content h1:not(:first-child),
-.content h2:not(:first-child),
-.content h3:not(:first-child),
-.content h4:not(:first-child),
-.content h5:not(:first-child),
-.content h6:not(:first-child),
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
 article+article {
   margin-top: 40px;
 }
