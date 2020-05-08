@@ -1,8 +1,9 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
+
 <section class="section">
   <div class="container">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Params.hidden" "ne" true) }}
+    {{ $paginator := .Paginate (where (where site.RegularPages "Type" "in" site.Params.mainSections) "Params.hidden" "ne" true) }}
     {{ range sort .Paginator.Pages }}
     <article>
       <div class="subtitle tags is-6 is-pulled-right">
@@ -24,5 +25,6 @@
     {{ end }}
   </div>
 </section>
+
 {{ partial "pager" . }}
 {{ partial "footer" . }}
