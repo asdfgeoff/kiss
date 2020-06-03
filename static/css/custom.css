@@ -10,3 +10,7 @@ code.has-jax {
 .highlight {
     margin-top: 20px;
   }
+
+.page-title {
+text-transform: uppercase;
+}
