@@ -17,7 +17,8 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | html }}</description>
       {{ if $.Site.Params.rss.includeContent }}
-      <content>{{ .Content | safeHTML }}</content>
+      <!-- <content:encoded>{{ .Content | safeHTML }}</content:encoded> -->
+      <content:encoded>{{ `<![CDATA[` | safeHTML }}{{ .Content | safeHTML }}{{ `]]>` | safeHTML }}</content:encoded>
       {{ end }}
     </item>
     {{ end }}
